@@ -245,8 +245,9 @@ footer {
   }
 
   /* apply CSS Animations to the latter part of page load for large screen sizes only */
+  
   .projects {
-    animation-name: flip-in;
+    animation-name: spin-in;
     animation-duration: .5s;
     animation-fill-mode: forwards;
     animation-delay: 2.5s;
@@ -266,6 +267,7 @@ footer {
     animation-delay: 2.5s;
   }
 
+/* Opted this transition effect out --------
   @keyframes flip-in {
     0% {
       background-color: #bee3db;
@@ -296,8 +298,7 @@ footer {
       filter: blur(0);
     }
   }
-}
-
+*/
 @keyframes fade-in {
 
   0%,
@@ -318,7 +319,7 @@ footer {
 @keyframes spin-in {
 
   0%,
-  66% {
+  50% {
     opacity: 0;
     filter: blur(1);
   }
@@ -330,4 +331,5 @@ footer {
     opacity: 1;
   }
 
+}
 }
