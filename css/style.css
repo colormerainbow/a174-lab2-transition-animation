@@ -271,6 +271,7 @@ footer {
       background-color: #bee3db;
       transform: translate(0, 0) rotateY(0deg) rotateX(0deg);
       opacity: 0;
+      filter: blur(1);
     }
 
     25% {
@@ -292,6 +293,7 @@ footer {
       background-color: #89b0ae;
       transform: translate(0, 0) rotateY(0deg) rotateX(0deg);
       opacity: 1;
+      filter: blur(0);
     }
   }
 }
@@ -301,12 +303,14 @@ footer {
   0%,
   50% {
     opacity: 0;
+    filter: blur(1);
   }
 
   100% {
-    transform: rotate(-3600deg);
+    transform: rotate(-360deg);
     transform-origin: 20% 40%;
     filter: blur(0);
+    opacity: 1;
   }
 
 }
@@ -316,12 +320,14 @@ footer {
   0%,
   66% {
     opacity: 0;
+    filter: blur(1);
   }
 
   100% {
-    transform: rotate(7200deg);
+    transform: rotate(360deg);
     transform-origin: 20% 40%;
     filter: blur(0);
+    opacity: 1;
   }
 
 }
